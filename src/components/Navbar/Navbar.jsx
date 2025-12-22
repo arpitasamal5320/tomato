@@ -8,7 +8,7 @@ const Navbar = () => {
     
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm m-5">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white  shadow-sm m-5">
         <div className="container-fluid px-4" style={{height:'150px'}}>
 
           {/* Logo */}

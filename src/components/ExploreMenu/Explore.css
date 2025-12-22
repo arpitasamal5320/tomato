@@ -1,0 +1,27 @@
+
+
+.explore-menu-heading {
+  font-family: 'Rubik Bubbles';
+  font-size: clamp(36px, 8vw, 100px);
+  box-shadow: 5px 5px 5px 5px #9aca41e0;
+  color: rgb(177, 210, 11);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: clamp(280px, 90%, 1190px);
+  margin-bottom: 20px;
+}
+
+.explore-menu-text {
+  max-width: 60%;
+  color: #808080;
+  margin-bottom: 40px;
+}
+
+/* Circular images with shadow */
+.explore-menu-img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px #e96161f3;
+  width: clamp(100px, 12vw, 150px);
+  height: clamp(100px, 12vw, 150px);
+  object-fit: cover;
+}
