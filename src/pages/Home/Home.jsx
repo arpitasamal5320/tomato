@@ -1,13 +1,18 @@
-import ExploreMenu from '../../components/ExploreMenu/ExploreMenu.jsx'
-import Header from '../../components/Header/Header.jsx'
+import { useState } from 'react';
+import ExploreMenu from '../../components/ExploreMenu/ExploreMenu.jsx';
+import Header from '../../components/Header/Header.jsx';
+import FoodDisplay from '../FoodDisplay/FoodDisplay.jsx';
 
-import './Home.css'
+
+import './Home.css';
 
 const Home = () => {
+  const[category, setCategory] = useState("All");
   return (
     <div >
       <Header/>
-      <ExploreMenu/>
+      <ExploreMenu category={category} setCategory={setCategory}  />
+      <FoodDisplay category={category} />
     </div>
   )
 }

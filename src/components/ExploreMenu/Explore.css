@@ -13,8 +13,9 @@
 
 .explore-menu-text {
   max-width: 60%;
-  color: #808080;
+  color: #7d1414;
   margin-bottom: 40px;
+  font-size: 39px;
 }
 
 /* Circular images with shadow */
@@ -24,4 +25,16 @@
   width: clamp(100px, 12vw, 150px);
   height: clamp(100px, 12vw, 150px);
   object-fit: cover;
+}
+.explore-menu-list-item {
+  margin-top: 10px;
+  font-size: 2.1rem; /* or 22px */
+  font-weight: 500;
+}
+
+.explore-menu hr{
+  margin-top: 10px;
+  height:2px;
+  background-color:#8b7e7ada;
+  border:none;
 }
