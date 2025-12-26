@@ -22,10 +22,15 @@
 .explore-menu-img {
   border-radius: 50%;
   box-shadow: 0 0 15px #e96161f3;
-  width: clamp(100px, 12vw, 150px);
-  height: clamp(100px, 12vw, 150px);
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Adjust max size */
+  aspect-ratio: 1 / 1; /* keep it square */
   object-fit: cover;
+  display: block;
+  margin: 0 auto; /* center inside column */
 }
+
 .explore-menu-list-item {
   margin-top: 10px;
   font-size: 2.1rem; /* or 22px */
