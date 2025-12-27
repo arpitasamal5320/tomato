@@ -40,7 +40,7 @@ import { useState } from 'react';
 import { menu_list } from '../../assets/assets';
 import './Explore.css';
 
-const ExploreMenu = (category, setCategory) => {
+const ExploreMenu = ({category, setCategory}) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   
 
@@ -66,6 +66,7 @@ const ExploreMenu = (category, setCategory) => {
             }}
           >
             <img
+            
               src={item.menu_image}
               alt={item.menu_name}
               className="explore-menu-img mb-2 img-fluid"
