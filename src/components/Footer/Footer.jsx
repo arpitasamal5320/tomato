@@ -1,152 +1,60 @@
-.footer {
-  color: rgb(38, 37, 37);
-  background-color: rgb(197, 192, 192);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 8vw;
-  padding-top: 80px;
-  width: 100%;
-  overflow-x: hidden; /* ✅ prevents horizontal overlap */
+
+import { assets } from '../../assets/assets';
+import './Footer.css';
+
+const Footer = () => {
+  return (
+   <div id="footer" className="footer">
+    <div className="footer-content">
+      <div className="footer-content-left">
+        <img src={assets.logo}></img>
+        <p>Food Delivery Website</p>
+        <div className="footer-social-icons">
+            <img src={assets.facebook_icon} alt=""/>
+            <img src={assets.twitter_icon} alt=""/>
+            <img src={assets.linkedin_icon} alt=""/>
+        </div>
+        </div> 
+        <div className="footer-content-center">
+<h2
+  style={{
+    fontSize: "34px",
+    fontWeight: "900",
+    color: "rgb(124, 64, 25)",
+  }}
+>
+  Company
+</h2>
+
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Delivery</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div> 
+        <div className="footer-content-right">
+            <h2>get in touch</h2>
+            <ul>
+                <li>+1-222-353-3674</li>
+                <li>contact@fooddeliveryweb.com</li>
+            </ul>
+        </div>
+        
+    </div>
+  <hr
+  style={{
+    border: "none",
+    height: "2px",
+    width: "70%",
+    margin: "40px auto",
+    backgroundColor: "rgba(26, 29, 37, 1)",
+  }}
+/>
+
+    
+   </div>
+  )
 }
 
-/* ================= BASE LAYOUT ================= */
-
-.footer-content {
-  width: 100%;
-  max-width: 1400px;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 60px;
-}
-
-.footer-content-left,
-.footer-content-center,
-.footer-content-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  min-width: 0; /* ✅ fixes grid overflow */
-}
-
-/* ================= SOCIAL ICONS ================= */
-
-.footer-social-icons {
-  display: flex;
-  flex-wrap: wrap; /* ✅ prevents overlap */
-  gap: 12px;
-}
-
-.footer-social-icons img {
-  width: 80px;
-  max-width: 100%;
-}
-
-/* ================= TEXT ================= */
-
-.footer-content-left p {
-  font-size: 28px;
-  font-weight: 800;
-  color: rgb(124, 64, 25);
-  line-height: 1.2;
-}
-
-.footer-content-right h2 {
-  font-size: 32px;
-  font-weight: 900;
-  color: rgb(124, 64, 25);
-}
-
-.footer-content-right li,
-.footer-content-center li {
-  list-style: none;
-  font-size: 18px;
-  color: rgb(60, 56, 56);
-  line-height: 1.6;
-}
-
-/* ================= RESPONSIVE ================= */
-
-/* Laptops */
-@media (max-width: 1200px) {
-  .footer-content {
-    grid-template-columns: 1.6fr 1fr 1fr;
-    gap: 40px;
-  }
-
-  .footer-social-icons img {
-    width: 65px;
-  }
-}
-
-/* Tablets */
-@media (max-width: 992px) {
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-  }
-
-  .footer-content-left {
-    grid-column: span 2;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-content-center,
-  .footer-content-right {
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-content-left p {
-    font-size: 24px;
-  }
-
-  .footer-content-right h2 {
-    font-size: 26px;
-  }
-
-  .footer-social-icons {
-    justify-content: center;
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .footer {
-    padding: 20px 5vw;
-    padding-top: 50px;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .footer-content-left,
-  .footer-content-center,
-  .footer-content-right {
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-content-left p {
-    font-size: 20px;
-  }
-
-  .footer-content-right h2 {
-    font-size: 22px;
-  }
-
-  .footer-content-right li,
-  .footer-content-center li {
-    font-size: 16px;
-  }
-
-  .footer-social-icons img {
-    width: 50px;
-  }
-}
-
+export default Footer  ;

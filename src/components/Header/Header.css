@@ -1,49 +1,4 @@
-/*
-.header-contents {
-  color: #f44d10;
-  position: absolute;
-  bottom: 380px;
-  left: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  animation: fadeIn 2s ease-in;
-}
 
-.header-contents h1 {
-  font-size: 60px !important;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-
-.header {
-  width: 96vw;
-  height: 60vh;
-  margin-top: 0px !important;
-  margin-left: 45px;
-  background: url('/header_img.png') no-repeat center center;
-  background-size: cover;
-  position: relative;
-  box-shadow: 0 8px 25px rgba(155, 50, 50, 0.6);
-  border-radius: 30px;
-}
-
-.header-contents button {
-  width: 180px;
-  padding: 15px 20px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-left: 950px;
-  color: white;
-  background-color: #c4ea47da;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(121, 175, 131, 0.7);
-}
-
-*/
 
 .header {
  width: 96vw;

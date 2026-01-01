@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { assets } from '../../assets/assets.js';
 import './Navbar.css';
 
-const Navbar = () => {
-  const [menu,setMenu] = useState("menu");
+
+const Navbar = ({setShowLogin}) => {
+  const [menu,setMenu] = useState("");
   return (
     
     <>
@@ -36,18 +38,42 @@ const Navbar = () => {
 
           {/* Menu */}
           <div className="collapse navbar-collapse" id="navbarContent">
-            <ul className="navbar-nav mx-auto mb-2 ms-3 mb-lg-0 gap-lg-4 text-center fs-5">
-              <li onClick={() => setMenu("home")} className={menu==="home"?"active":""}>
-                home
-              </li>
-              <li onClick={() => setMenu("menu")} className={menu==="menu"?"active":""}>
-               menu
-              </li>
-              <li onClick={() => setMenu("contacts")} className={menu==="contacts"?"active":""}>
-                contacts
-              </li>
-              
-            </ul>
+           <ul className="navbar-nav mx-auto mb-2 ms-3 mb-lg-0 gap-lg-4 text-center fs-5">
+
+ <li>
+  <Link
+    to="/"
+    className={menu === "home" ? "active" : ""}
+    onClick={() => setMenu("home")}
+  >
+    home
+  </Link>
+</li>
+
+<li>
+  <a
+    href="#explore-menu"
+    className={menu === "menu" ? "active" : ""}
+    onClick={() => setMenu("menu")}
+  >
+    menu
+  </a>
+</li>
+
+<li>
+  <a
+    href="#footer"
+    className={menu === "contacts" ? "active" : ""}
+    onClick={() => setMenu("contacts")}
+  >
+    contacts
+  </a>
+</li>
+
+
+</ul>
+
+
 
             {/* Right Section */}
             <div className="d-flex align-items-center gap-3 justify-content-center">
@@ -71,10 +97,18 @@ const Navbar = () => {
 <div className="dot"></div>
 
               </div>
-
-              <button className="btn">
+<button
+  type="button"
+  onClick={() => {
+    console.log("SIGNUP CLICKED");
+    setShowLogin(true);
+  }}
+  className="btn"
+  style={{ position: "relative", zIndex: 10 ,fontSize:'40px'}}
+>
   Sign In
 </button>
+
 
             </div>
           </div>

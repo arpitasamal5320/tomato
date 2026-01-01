@@ -45,7 +45,7 @@ const ExploreMenu = ({category, setCategory}) => {
   
 
   return (
-    <div className="explore-menu container my-5">
+    <div id="explore-menu" className="explore-menu container my-5">
       <h1 className="text-center explore-menu-heading">Explore Menu</h1>
 
       <p className="explore-menu-text text-center mx-auto">
