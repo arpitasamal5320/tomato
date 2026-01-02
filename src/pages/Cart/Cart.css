@@ -1,0 +1,221 @@
+
+/* Container spacing */
+.cart-container {
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+/* Card */
+.cart-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Card body padding */
+.cart-card-body {
+  padding: 20px;
+}
+
+/* Header row (desktop only) */
+.cart-header-row {
+  color: rgb(229, 16, 16); /* header text green */
+  font-weight: 800;
+  text-align: center;
+  font-size: 22px;
+  
+}
+
+.cart-header-row > div {
+  padding: 8px 0;
+}
+
+/* Divider */
+.cart-divider {
+  border-top: 2px solid #ddd;
+}
+
+/* Cart items row */
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item-row > div {
+  padding: 5px;
+}
+
+/* Image column */
+.cart-item-img img {
+  max-height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Price and total text */
+.cart-item-price,
+.cart-item-total {
+  font-weight: 600;
+  color: #ff6b00; /* orange theme */
+   font-size:24px;
+}
+.cart-item-title,
+.cart-item-quantity {
+  font-weight: 900;
+  color: #147a2c;
+  font-size:24px;
+} 
+
+
+/* Remove button */
+.cart-remove-btn {
+  padding: 2px 6px;
+  font-size: 14px;
+  line-height: 1;
+  background-color:  rgb(229, 16, 16); 
+  color: rgb(246, 203, 203);
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 34px;
+  height: 34px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cart-remove-btn:hover {
+  background-color:#147a2c;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cart-header-row {
+    display: none !important;
+  }
+  .cart-item-row {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .cart-item-row > div {
+    width: 50%;
+    margin-bottom: 8px;
+  }
+  .cart-item-img {
+    width: 40%;
+  }
+}
+
+
+
+
+/* Cart items row */
+.cart-item-row:hover {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  background-color: #bbe085; /* light orange background */
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+}
+
+/* Hover effect: slight zoom + shadow */
+.cart-item-row:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(255, 107, 0, 0.15); /* soft orange shadow */
+}
+
+
+/* Cart bottom wrapper */
+.cart-bottom {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fffaf5; /* light orange background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.08);
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Inner container for totals */
+.cart-total-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Each row */
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+/* Label */
+.cart-total-label {
+  font-weight: 500;
+  color: #147a2c; /* green label */
+}
+
+/* Value */
+.cart-total-value {
+  font-weight: 600;
+  color: #ff6b00; /* orange value */
+}
+
+/* Divider */
+.cart-bottom-divider {
+  border: none;
+  border-top: 1px solid #ffd6b3;
+  margin: 5px 0;
+}
+
+/* Final total row */
+.cart-final-total .cart-total-label {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.cart-final-total .cart-total-value {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+.proceed-btn {
+  background-color: #ff6b00; /* main orange theme */
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(241, 33, 10, 0.4);
+  margin-top: 15px;
+}
+
+/* Hover Effect */
+.proceed-btn:hover {
+  transform: scale(1.05); /* slight zoom */
+  box-shadow: 0 6px 15px rgba(73, 17, 151, 0.6);
+  background-color: #c8d62c;
+  color: black;
+}
+
+/* Active / Clicked Effect */
+.proceed-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(255, 107, 0, 0.4);
+}

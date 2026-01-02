@@ -120,7 +120,7 @@ export const food_list = [
         _id: "1",
         name: "Greek salad",
         image: food_1,
-        price: 1280,
+        price: 180,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"
     },
@@ -156,7 +156,7 @@ export const food_list = [
         _id: "6",
         name: "Peri Peri Rolls",
         image: food_6,
-        price: 1332,
+        price: 332,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Rolls"
     }, {
@@ -177,7 +177,7 @@ export const food_list = [
         _id: "9",
         name: "Ripple Ice Cream",
         image: food_9,
-        price: 1834,
+        price: 224,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Deserts"
     }, {

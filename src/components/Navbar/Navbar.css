@@ -3,8 +3,9 @@
     border-bottom:7px solid #ef4010da;
 }
 
-.navbar-nav li {
-  cursor: pointer;
+.navbar-search-icon {
+  position: relative;
+  z-index: 11;   /* ✅ added */
 }
 
 .navbar-nav li {
@@ -12,7 +13,7 @@
   padding: 8px 16px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(244, 100, 38, 0.942);
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .navbar-search-icon .dot{
@@ -32,7 +33,7 @@
 .btn {
   position: relative;
   z-index: 10;
-  font-size: 40px;
+  font-size: 35px;
   padding: 14px 36px;
   font-weight: 600;
   border: none;
