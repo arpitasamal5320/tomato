@@ -1,0 +1,119 @@
+/* Base form styling */
+.place-order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: #fff8f2;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Left section */
+.place-order-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent; /* initial border */
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Right section */
+.place-order-right {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(255, 111, 0, 0.2);
+  gap: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Hover effect for entire sections */
+
+.place-order-right:hover {
+  border: 2px solid red; /* red border on hover */
+}
+
+/* Input fields */
+.place-order-left input,
+.place-order-right input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ffb74d;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover on inputs */
+.place-order-left input:hover,
+.place-order-right input:hover {
+  border: 2px solid red;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.3); /* subtle red glow */
+}
+
+/* Focus on inputs */
+.place-order-left input:focus,
+.place-order-right input:focus {
+  border: 2px solid red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Multi-fields layout */
+.multi-fields {
+  display: flex;
+  gap: 1rem;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+/* Button below form */
+.place-order-right button {
+  padding: 0.85rem 2rem;
+  background: linear-gradient(45deg, #ff6f00, #ff8f00);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.place-order-right button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4);
+  background: #548a56;
+  color: rgba(0, 0, 0, 0.714);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .multi-fields {
+    flex-direction: column;
+  }
+}
